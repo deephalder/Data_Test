@@ -1,5 +1,6 @@
 #' Titanic Survial Rate Analysis
 #' This package analyses the data of a list of passangers on titanic and analyses the survival rate.
+#' @export
 data_aquisition <- function(){
 #finding out the filepath of the train csv file and store it in path variable
         path <-system.file(package = "DataTest","files","train.csv")
