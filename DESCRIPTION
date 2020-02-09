@@ -3,10 +3,9 @@ Type: Package
 Title: Titanic Data Analysis
 Version: 0.1.0
 Author: Subhradip Halder
-Maintainer: The package maintainer <yourself@somewhere.net>
 Description: This package analyses the data of a list of passangers on titanic and analyses the survival rate based on certain factors, such as class, sex, fare, etc.
     Use four spaces when indenting paragraphs within the Description.
-Imports: Rcpp (>= 1.0.3), utils, devtools,zoo
+Imports: Rcpp (>= 1.0.3), utils, devtools, zoo , DataExplorer, readr, plotly
 Encoding: UTF-8
-LazyData: true
+LazyData: false
 RoxygenNote: 7.0.2
