@@ -2,12 +2,12 @@
 % Please edit documentation in R/data_aquisition.R
 \name{data_aquisition}
 \alias{data_aquisition}
-\title{Titanic Survial Rate Analysis
-This package analyses the data of a list of passangers on titanic and analyses the survival rate.}
+\title{Function to Acquire the data for analysis
+This function imports the train file for titanic data analysis and stores them in a dataframe.}
 \usage{
 data_aquisition()
 }
 \description{
-Titanic Survial Rate Analysis
-This package analyses the data of a list of passangers on titanic and analyses the survival rate.
+Function to Acquire the data for analysis
+This function imports the train file for titanic data analysis and stores them in a dataframe.
 }
