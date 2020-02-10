@@ -52,6 +52,23 @@ survivor_age_mean <- function(df){
         i <- df[['Survived']] == 1
         sprintf("The mean age of the survivors was %f:", mean(df[['Age']][i]))
 }
+# Create Plot function
+#' @title Create plot to analyse relation function
+#'
+#' @description This function analyses the  relationship between sex and survival.
+#' @usage Run the function by calling it without arguments.
+#' @examples
+#' main_func()
+#' @import DataExplorer
+#' @import ggplot2
+#' @export
+plot_graph <- function(df){
+        library(ggplot2)
+        ggplot(data=df[1:891,] , aes(x=Sex,fill=Survived)) +geom_bar()
+        }
+
+#'
+#'
 # Main function
 #' @title Main function
 #'
@@ -63,6 +80,7 @@ survivor_age_mean <- function(df){
 #' @export
 main_func <- function(){
         df = import_data()
+        plot_graph(df)
         create_report(df)
         age_mean(df)
         survivor_age_mean(df)
