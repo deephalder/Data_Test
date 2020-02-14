@@ -8,18 +8,17 @@
 #' @param plot_sboc: Variable to store the graph behind the analysis
 #' @param sboc_output : a variable which stores both the analysis and plot results in a list.
 #' @return the analysis behind the relationship between the ticket class and also the graph based on the relationship.
-
 #' @examples survival_mean_class()
 #' @export
 survival_mean_class <- function(default=df){
-
+        library(ggplot2)
         meanset <- subset(df,Survived == 1 ,Pclass)
         sboc<- paste("The mean seat class of the survivors was :", mean(meanset$Pclass),"And the class with the most survival rate was Class:", round(mean(meanset$Pclass)),", which means that people with lower class had more chances of survival")
         sub_class <-data.frame(df$Survived,df$Pclass)
         colnames(sub_class) <- c("Survived", "Class")
         sub_class$Survived[sub_class$Survived==1] <-'Survived'
         sub_class$Survived[sub_class$Survived==0] <-'Not Survived'
-        plot_sboc <- ggplot(sub_class, aes(Class))+ geom_bar(aes(fill=Survived))
+        plot_sboc <- ggplot(sub_class, aes(Class))+ geom_bar(aes(fill=Survived))+ggtitle("Ticket Class - Survival Rate Graph")
         sboc_output <- list(sboc,plot_sboc)
         return(sboc_output)
 }

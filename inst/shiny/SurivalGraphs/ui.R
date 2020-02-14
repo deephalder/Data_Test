@@ -1,5 +1,8 @@
 #UI for the shiny app
+library(shinydashboard)
+library(ggplot2)
 
+#defining the User Interface
     shinyUI(
         dashboardPage(
             title='Titanic Passenger Data  Analysis',

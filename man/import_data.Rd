@@ -2,13 +2,19 @@
 % Please edit documentation in R/importdata.R
 \name{import_data}
 \alias{import_data}
-\title{Import Data}
+\title{Imports Data from csv file and stores it in a df.}
 \usage{
-To use this function by itself, store the DF in a variable.
+import_data()
+}
+\value{
+This function returns the  dafaframe after its created.
 }
 \description{
-This function reads the data from a csv-file and returns it as a DataFrame-object.
+This function reads the data from a csv-file and returns it as a DataFrame-object.It also handles missing age data using locf.
+}
+\details{
+This functions downloads the train.csv file from the package to the user's local and creates a dataframe.It then handles missing data and stores the dataframe to a .rda file under the data folder.
 }
 \examples{
-df = import_data()
+import_data()
 }
