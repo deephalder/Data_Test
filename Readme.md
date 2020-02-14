@@ -1,31 +1,17 @@
----
-title: Nineteen Years Later
-author: Harry Potter
-date: July 31, 2016
-output:
-  prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
----
 
+### Survival Analysis of Titanic passengers. 
 
-# MidDatAnalysis
+Package Name             | Author                                                                 |Github Repo
+---------------------|-----------------------------------------------------------------------------|------------------------
+MidDatAnalysis        | Subhradip halder                          | [a2b3bab6](https://github.com/unimi-dse/a2b3bab6)
 
-
-#### Survival Rate Analysis of Passengers in Titanic.
-##### Repo : a2b3bab6
 
 #### Introduction
 
 The RMS Titanic was a British passenger liner that sank in the North Atlantic Ocean in the early morning of April 15, 1912 after colliding with an iceberg during her maiden voyage from Southampton to New York City. The ship contained 2,224 passengers and crew, out of which 1,500 died in the unfortunate incident.
 
-<center>
-![](https://upload.wikimedia.org/wikipedia/commons/6/6e/St%C3%B6wer_Titanic.jpg)
-</center>
 
-<br>
-
-In this study, we intend to perform a statistical analysis of the fatalities on the ship using the Titanic dataset on [Kaggle](https://www.kaggle.com/c/titanic/data/train.csv). The main question that we are addressing here is whether there is a statistically significance relation between the death of the person and their passenger class, age, sex and showcases the analysis in different graph and a shiny app.
+In this study, we intend to perform a statistical analysis of the fatalities on the ship using the Titanic dataset on [Kaggle](https://www.kaggle.com/c/titanic/data/train.csv). The main question that we are addressing here is whether there is a statistically significance relation between the death of the person and their passenger class, age, sex and showcases the analysis in different graphs and a shiny app.
 
 
 #### Installation
@@ -72,12 +58,13 @@ require(MidDatAnalysis)
 
 4. You can run the __create_detailed_report( )__ function at the end to give you the detailed report.
 
-#### About the author.
+#### About the author:
 
-|__Subhradip Halder__.|
-|Masters student|
-|University Of Milan,Italy|
+Name             |        Desc.                                                           |Linked.in
+---------------------|-----------------------------------------------------------------------------|------------------------
+Subhradip Halder       | MSc. Data Science Student at University of Milan,Italy                         | [Profile link](https://www.linkedin.com/in/deephalder/)
 
+###### Dated:Feb 14,2020
 
 
         
