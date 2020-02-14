@@ -13,8 +13,6 @@ Imports:
         zoo,
         DataExplorer,
         ggplot2,
-        dplyr,
-        tidyverse,
         shinydashboard,
         shiny,
         readr
