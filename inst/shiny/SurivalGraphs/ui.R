@@ -2,6 +2,9 @@
 library(shinydashboard)
 library(ggplot2)
 
+#loading the data
+df<-DataTest::titanic_data
+
 #defining the User Interface
     shinyUI(
         dashboardPage(
@@ -52,6 +55,7 @@ library(ggplot2)
                         tabItem(tabName = "data",h3(" Passenger data"),
                                 fluidRow(
                                     DT::dataTableOutput("data")
+
                                 ))
                 )
 

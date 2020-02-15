@@ -6,6 +6,7 @@
 #' @examples create_detailed_report()
 #' @import DataExplorer
 #' @export
-create_detailed_report <- function(default=df){
+create_detailed_report <- function(){
+        df<-DataTest::titanic_data
         DataExplorer::create_report(df)
 }

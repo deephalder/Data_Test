@@ -6,5 +6,6 @@
 #' @export
 
 run_shiny_app<- function(){
+
         shiny::runApp('inst/shiny/SurivalGraphs')
 }

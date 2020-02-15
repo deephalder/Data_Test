@@ -6,21 +6,20 @@
 #' @examples import_data()
 #' @export
 import_data <- function() {
-        library(readr)
-        library(zoo)
+
         #importing data from file.
-        df <- read_csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
+        titanic_data <- read.csv(system.file("extdata", "train.csv", package="DataTest"))
 
 
         # as for this dataset we have a lot of missing values for the Age feature
         # we will be using the locf(last observation carried forward) function from Zoo package
         # to fill the NA values.
 
-        df <- zoo::na.locf(df)
+        titanic_data <- zoo::na.locf(titanic_data)
 
         #saving df in a rda file,overwriting the file if already present:
-        usethis::use_data(df, overwrite = TRUE)
+        usethis::use_data(titanic_data,overwrite = TRUE)
 
         #returning the main dataset df.
-        return(df)
+        return(titanic_data)
 }

@@ -14,9 +14,7 @@ Imports:
         DataExplorer,
         ggplot2,
         shinydashboard,
-        shiny,
-        readr,
-        testthat
+        shiny
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2

@@ -16,7 +16,9 @@
 #' @export
 
 
-survival_sex_rel <- function(default=df){
+survival_sex_rel <- function(){
+        library(ggplot2)
+        df <-DataTest::titanic_data
         sub_sex <- data.frame(df$Survived,df$Sex)
         colnames(sub_sex)= c("Survived","Sex")
         sub_sex$Survived[sub_sex$Survived==1] <-'Survived'
@@ -30,7 +32,7 @@ survival_sex_rel <- function(default=df){
 
         #plotting the relationship:
 
-        plot_sex<-ggplot(data=sub_sex,aes(x=Sex,fill=Survived))+geom_bar()+ggtitle("Sex - Survival Rate Graph")
+        plot_sex<- ggplot(data=sub_sex,aes(x=Sex,fill=Survived))+geom_bar()+ggtitle("Sex - Survival Rate Graph")
 
         sex_rel_ans <- list(mf.total,plot_sex)
         return(sex_rel_ans)

@@ -4,7 +4,7 @@
 \alias{survival_sex_rel}
 \title{Survival rate based on Sex.}
 \usage{
-survival_sex_rel(default = df)
+survival_sex_rel()
 }
 \arguments{
 \item{df:}{The titanic train data set which we imported and converted to df dataframe.}

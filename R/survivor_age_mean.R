@@ -9,7 +9,9 @@
 #' @return The mean age of the survivors and the most proobable age of survival and the graphical representation between age and survival.
 #' @examples survivor_age_mean()
 #' @export
-survivor_age_mean <- function(default=df){
+survivor_age_mean <- function(){
+        library(ggplot2)
+        df <-DataTest::titanic_data
 
         Subage <- subset(df,Survived ==Survived,Age)
 

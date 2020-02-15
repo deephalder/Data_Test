@@ -4,12 +4,14 @@
 \alias{survival_mean_class}
 \title{Relationship between ticket class and survival.}
 \usage{
-survival_mean_class(default = df)
+survival_mean_class()
 }
 \arguments{
 \item{df}{The Titanic dataframe which gets imported after running the import_data functions. Raw data as csv from Kaggle, converted to a R dataframe with the function read.csv.}
 
 \item{sub_class:}{Subset dataframe containing the Class for passengers and their respective survival rate.}
+
+\item{sboc}{: Variable which stores the the analysis of the mean ticket class}
 
 \item{plot_sboc:}{Variable to store the graph behind the analysis}
 

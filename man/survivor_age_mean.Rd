@@ -4,7 +4,7 @@
 \alias{survivor_age_mean}
 \title{Survivor Age Mean}
 \usage{
-survivor_age_mean(default = df)
+survivor_age_mean()
 }
 \arguments{
 \item{df:}{The titanic train data set which we imported and converted to df dataframe.}

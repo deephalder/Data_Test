@@ -4,7 +4,7 @@
 \alias{create_detailed_report}
 \title{Function to create a detailed report of the data.}
 \usage{
-create_detailed_report(default = df)
+create_detailed_report()
 }
 \value{
 imports the data from the file and runs the shiny app.

@@ -1,4 +1,6 @@
 #shiny server
+
+df<- DataTest::titanic_data
 shinyServer(function(input,output){
 
     output$sex_rel <-renderPlot({
